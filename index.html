@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+  <title>Making + Montessori</title>
+</head>
+<body>
+  <section>
+    <a href="index.html" class="mm">Making + Montessori</a>
+    <div class="logos">
+      <img class="logo" src="images/metamedia.jpg">
+      <img class="logo" src="images/cmlogo.png">
+    </div>
+    <p>Hello here is my moderately long one sentence explaining
+      what this is becuase I have a lot to explain and suchhhhhhhhh.</p>
+    <div id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </section>
+  <section>
+    <img class="scroll" src="images/1.jpg">
+    <img class="scroll" src="images/4.jpg">
+    <img class="scroll" src="images/7.jpg">
+    <img class="scroll" src="images/10.jpg">
+  </section>
+  <section>
+    <img class="scroll" src="images/2.jpg">
+    <img class="scroll" src="images/5.jpg">
+    <img class="scroll" src="images/9.jpg">
+    <img class="scroll" src="images/11.jpg">
+  </section>
+  <section>
+    <img class="scroll" src="images/3.jpg">
+    <img class="scroll" src="images/6.jpg">
+    <img class="scroll" src="images/8.jpg">
+  </section>
+  <div class="links">
+    <a href="aboutus.html">About Us</a>
+    <a class="program">Program</a>
+    <a class="program realprogram" href="program.html">Program</a>
+  </div>
+  <div class="overlay"></div>
+  <script>
+  $('#hamburger, .program').click(function() {
+    $('#hamburger').toggleClass("open");
+    $('.links').toggleClass("down");
+    $('.overlay').toggleClass("bgfff");
+    $(".program").toggleClass("programnotransform");
+
+    $('.program').toggleClass("realprogram");
+  });
+  </script>
+</body>
+</html>

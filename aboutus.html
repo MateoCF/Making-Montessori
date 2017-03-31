@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+  <title>Making + Montessori</title>
+</head>
+<body style="overflow: scroll;">
+<section>
+  <a href="index.html" class="mm">Making + Montessori</a>
+  <div class="logos">
+    <img class="logo" src="images/metamedia.jpg">
+    <img class="logo" src="images/cmlogo.png">
+  </div>
+  <p>Hello here is my moderately long one sentence explaining
+    what this is becuase I have a lot to explain and suchhhhhhhhh.</p>
+  <div id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</section>
+<span class="content">
+  <h1>About MetaMedia</h1>
+  <img class="studioimg" src="https://makeitbetter.net/wp-content/uploads/2016/12/McGaw-YMCA-MetaMedia.jpg">
+  <p>MetaMedia is a drop-in digital media center and maker-education program designed
+    for middle-school youth. The program was founded in January 2015 as a partnership
+    between the McGaw YMCA, Youth & Opportunity United, and Northwestern University
+    and has served over 1,400 middle-school youth. MetaMedia offers youth a hands-on,
+    project-based, flexible after-school learning environment where they can develop
+    strong relationships with peers and mentors.</p>
+  <h1>About Chiaravalle Montessori DaVinci Studio</h1>
+  <img class="studioimg" src="https://www.chiaravalle.org/uploaded/photos/ABOUT/North_Wing/DaVinci_Studio.jpg">
+  <p>The DaVinci studio in the Chiaravalle North Wing is a STEAM-inspired maker space.
+    STEAM is a movement championed by Rhode Island School of Design (RISD).
+    Interdisciplinary learning is a prominent differentiator of Montessori education.
+    The DaVinci studio will be a thoughtfully-designed space to showcase the Art +
+    Science intersection.</p>
+  <a target="_blank" href="http://www.chiaravalle.org/apply/why-chiaravalle?">Chiaravalle Montessori Webpage</a>
+  <a target="_blank" href="http://www.mcgawymca.org/metamedia/">MetaMedia Webpage</a>
+</span>
+<div class="links">
+  <a href="aboutus.html">About Us</a>
+  <a class="program">Program</a>
+  <a class="program realprogram" href="program.html">Program</a>
+</div>
+<div class="overlay"></div>
+
+<script>
+$('#hamburger, .program').click(function() {
+  $('#hamburger').toggleClass("open");
+  $('.links').toggleClass("down");
+  $('.overlay').toggleClass("bgfff");
+  $(".program").toggleClass("programnotransform");
+
+  $('.program').toggleClass("realprogram");
+});
+</script>
+<style>
+@media (min-width: 900px) {
+  section:first-child {
+    position: fixed;
+  }
+}
+</style>
+</body>
+</html>
